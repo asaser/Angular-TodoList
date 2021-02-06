@@ -1,0 +1,22 @@
+li {
+  background: #3181bb61;
+  margin: 5px;
+}
+
+.odd-li {
+  background: #2913a94a;
+  margin: 5px;
+}
+
+.last-li {
+  background: #30cc1855;
+  margin: 5px;
+}
+
+.secondButton {
+  margin-right: 7px;
+}
+
+.taskShow {
+  list-style-type: decimal;
+}

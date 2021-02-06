@@ -1,0 +1,10 @@
+.addTask {
+  margin: 30px 50px 30px 50px;
+}
+
+.inputText {
+  width: 70vh;
+  border-radius: 5px;
+  border: 2px solid rgba(226, 26, 26, 0.442);
+  background-color: rgba(144, 142, 142, 0.415);
+}

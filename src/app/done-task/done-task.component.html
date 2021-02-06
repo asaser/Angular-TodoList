@@ -1,0 +1,15 @@
+  <p>
+    Done Task: {{tasksDone.length}}
+  </p>
+<div class="input-group">
+  <div class="input-group-append">
+  <ol class="taskShow">
+    <li appChecked *ngFor = "let task of tasksDone">
+      <button type="button" class="firstButton btn btn-danger" (click) = "removeDoneTask(task)">Delete</button>
+
+      {{task.name | transformTask}}
+    </li>
+  </ol>
+</div>
+</div>
+

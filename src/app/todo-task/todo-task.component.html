@@ -1,0 +1,24 @@
+<ng-container *ngIf = "tasksList.length > 0; else noTask">
+
+  <p [ngStyle] = "{ color: getColor() }">
+    To-Do list: {{tasksList.length}}
+  </p>
+
+  <div class="input-group">
+    <div class="input-group-append">
+    <ol class="taskShow">
+      <li *ngFor = "let task of tasksList | sort; let odd = odd"  [ngClass] = "{'odd-li': odd === true, 'last-li': tasksList.length === 1 }">
+        <button type="button" class="firstButton btn btn-danger" (click) = "remove(task)">Delete</button>
+        <button type="button" class="secondButton btn btn-success" (click) = "done(task)">Done</button>
+        {{task.name | transformTask}}
+      </li>
+    </ol>
+  </div>
+  </div>
+
+</ng-container>
+<ng-template #noTask>
+  <p>
+    You don't have any tasks
+  </p>
+ </ng-template>
