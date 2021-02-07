@@ -10,6 +10,7 @@ import { CheckedDirective } from './shared/checked.directive';
 import { DataDirective } from './shared/data.directive';
 import { TransformTaskPipe } from './shared/transform-task.pipe';
 import { SortPipe } from './shared/sort.pipe';
+import { FooterComponent } from './add-task/footer/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SortPipe } from './shared/sort.pipe';
     DataDirective,
     TransformTaskPipe,
     SortPipe,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
